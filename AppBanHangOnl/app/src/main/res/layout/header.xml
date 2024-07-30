@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/hinhanhbackground"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="200dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView_HinhAnhUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:shapeAppearanceOverlay="@style/circular"
+        android:background="@drawable/rounded_image"
+        android:src="@drawable/huy" />
+
+    <TextView
+        android:id="@+id/textView_TenNguoiDung"
+        app:fontFamily="@font/baloo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huỳnh Công Huy"
+        android:textColor="#FFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:textColor="#FFFF"
+        app:fontFamily="@font/aclonica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App bán hàng điện thoại và lap top"
+        android:textSize="14sp" />
+
+</LinearLayout>

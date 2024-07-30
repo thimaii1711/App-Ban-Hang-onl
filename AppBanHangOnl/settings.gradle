@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        // livestream
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+
+        maven { url "https://jitpack.io" }
+    }
+}
+
+rootProject.name = "AppBanHangOnl"
+include ':app'

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.SpeakerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8sp"
+        android:paddingHorizontal="10sp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tvMeetingId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:text="Mã phòng : "
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:backgroundTint="#ff00"
+            android:text="Thoát"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHlsState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái : Đang dừng"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvParticipants"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10sp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnHLS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phát"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnWebcam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp"
+            android:text="Tắt webcam"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tắt mic"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

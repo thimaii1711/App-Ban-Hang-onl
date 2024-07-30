@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/shopping"
+        android:label="Mua sắm"
+        android:roundIcon="@drawable/shopping"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppBanHangOnl"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ViewOrdersUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PromotionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MeetingUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MeetingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.JoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.YoutubeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ThongKeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CreateProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ViewOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ResetPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.InfomationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LapTopProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PhoneProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".Service.FirebaseMessagerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
